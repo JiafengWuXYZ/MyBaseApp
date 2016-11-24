@@ -8,6 +8,7 @@
     android:orientation="vertical">
 
 <TextView
+    android:id="@+id/tv_title"
     android:layout_width="wrap_content"
     android:text="常用框架集成"
     android:textSize="20sp"

@@ -15,8 +15,15 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
-        android:configChanges="orientation|keyboardHidden|screenSize">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity android:name=".json.activity.NativeJsonParseAcitivity">
+        </activity>
+        <activity android:name=".json.activity.GsonActivity">
+        </activity>
+        <activity android:name=".json.activity.FastJsonActivity">
         </activity>
     </application>
 
