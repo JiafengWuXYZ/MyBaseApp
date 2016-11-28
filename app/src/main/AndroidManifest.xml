@@ -2,7 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.wujiafeng.mybaseapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
     <application
+        android:name=".AppAplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -24,6 +30,28 @@
         <activity android:name=".json.activity.GsonActivity">
         </activity>
         <activity android:name=".json.activity.FastJsonActivity">
+        </activity>
+        <activity android:name=".xutils3.XUtils3Activity">
+        </activity>
+        <activity android:name=".xutils3.annotation.FragmentXUtils3Activity">
+        </activity>
+        <activity android:name=".xutils3.net.XUtils3NetActivity">
+        </activity>
+        <activity android:name=".picasso.PicassoActivity">
+        </activity>
+        <activity android:name=".butterknife.ButterKnifeActivity">
+        </activity>
+        <activity android:name=".eventbus.EventBusActivity">
+        </activity>
+        <activity android:name=".eventbus.EventBusSendActivity">
+        </activity>
+        <activity android:name=".imageloader.activity.ImageLoaderActivity">
+        </activity>
+        <activity android:name=".imageloader.activity.ImageLoaderListViewActivity">
+        </activity>
+        <activity android:name=".imageloader.activity.ImageLoaderGridViewActivity">
+        </activity>
+        <activity android:name=".imageloader.activity.ImageLoaderViewPagerActivity">
         </activity>
     </application>
 

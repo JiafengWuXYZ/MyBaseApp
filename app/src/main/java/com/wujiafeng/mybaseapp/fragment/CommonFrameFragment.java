@@ -8,12 +8,17 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.wujiafeng.mybaseapp.json.activity.FastJsonActivity;
-import com.wujiafeng.mybaseapp.json.activity.GsonActivity;
-import com.wujiafeng.mybaseapp.json.activity.NativeJsonParseAcitivity;
 import com.wujiafeng.mybaseapp.R;
 import com.wujiafeng.mybaseapp.adapter.CommonFrameAdapter;
 import com.wujiafeng.mybaseapp.base.BaseFragment;
+import com.wujiafeng.mybaseapp.butterknife.ButterKnifeActivity;
+import com.wujiafeng.mybaseapp.eventbus.EventBusActivity;
+import com.wujiafeng.mybaseapp.imageloader.activity.ImageLoaderActivity;
+import com.wujiafeng.mybaseapp.json.activity.FastJsonActivity;
+import com.wujiafeng.mybaseapp.json.activity.GsonActivity;
+import com.wujiafeng.mybaseapp.json.activity.NativeJsonParseAcitivity;
+import com.wujiafeng.mybaseapp.picasso.PicassoActivity;
+import com.wujiafeng.mybaseapp.xutils3.XUtils3Activity;
 
 /**
  * Created by Jiafeng on 2016/11/24.
@@ -47,6 +52,21 @@ public class CommonFrameFragment extends BaseFragment {
                 }else if (data.toLowerCase().equals("fastjson")){
                     Intent intent = new Intent(mContext, FastJsonActivity.class);
                     mContext.startActivity(intent);
+                }else if (data.toLowerCase().equals("xutils3")){
+                    Intent intent = new Intent(mContext, XUtils3Activity.class);
+                    mContext.startActivity(intent);
+                }else if (data.toLowerCase().equals("picasso")){
+                    Intent intent = new Intent(mContext, PicassoActivity.class);
+                    mContext.startActivity(intent);
+                }else if (data.toLowerCase().equals("butterknife")){
+                    Intent intent = new Intent(mContext, ButterKnifeActivity.class);
+                    mContext.startActivity(intent);
+                }else if (data.toLowerCase().equals("eventbus")){
+                    Intent intent = new Intent(mContext, EventBusActivity.class);
+                    mContext.startActivity(intent);
+                }else if (data.toLowerCase().equals("imageloader")){
+                    Intent intent = new Intent(mContext, ImageLoaderActivity.class);
+                    mContext.startActivity(intent);
                 }
             }
         });
@@ -58,7 +78,7 @@ public class CommonFrameFragment extends BaseFragment {
         super.initData();
         Log.e(TAG,"initView！");
 
-        datas = new String[]{"OKHttp","NativeJsonParse","Gson","FastJson","xUtils3","Retrofit2","Fresco","Glide","greenDao","RxJava","volley","Gson","FastJson","picasso","evenBus","jcvideoplayer","pulltorefresh","Expandablelistview","UniversalVideoView","....."};
+        datas = new String[]{"OKHttp","NativeJsonParse","Gson","EventBus","FastJson","xUtils3","ButterKnife","ImageLoader","Picasso","Retrofit2","Fresco","Glide","greenDao","RxJava","volley","Gson","FastJson","picasso","evenBus","jcvideoplayer","pulltorefresh","Expandablelistview","UniversalVideoView","....."};
         mCommonFrameAdapter = new CommonFrameAdapter(mContext, datas);
         mListView.setAdapter(mCommonFrameAdapter);
     }
