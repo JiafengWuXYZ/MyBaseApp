@@ -1,14 +1,11 @@
-package com.wujiafeng.mybaseapp.imageloader;
+package com.wujiafeng.mybaseapp.picasso;
 
 /**
- * Created by Jiafeng on 2016/11/28.
+ * Created by Administrator on 2016/10/14.
  */
-
 public class Constants {
-
     public static final String[] IMAGES = new String[]{
             // Heavy images
-            "http://img5.imgtn.bdimg.com/it/u=2749190246,3857616763&fm=21&gp=0.jpg",
             "http://www.sinaimg.cn/qc/photo_auto/photo/84/35/39698435/39698435_140.jpg",
             "http://www.sinaimg.cn/qc/photo_auto/photo/44/23/39674423/39674423_140.jpg",
             "http://www.sinaimg.cn/qc/photo_auto/photo/74/19/39657419/39657419_140.jpg",
@@ -106,5 +103,4 @@ public class Constants {
             "http://www.sinaimg.cn/qc/photo_auto/photo/03/04/38200304/38200304_140.jpg",
             "http://www.sinaimg.cn/qc/photo_auto/photo/42/56/38134256/38134256_140.jpg"
     };
-
 }

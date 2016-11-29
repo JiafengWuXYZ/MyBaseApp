@@ -3,6 +3,7 @@ package com.wujiafeng.mybaseapp;
 import android.app.Application;
 import android.content.Context;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -23,6 +24,11 @@ public class AppAplication extends Application {
 
         //初始化ImageLoader
         initImageLoader(this);
+        initFresco();
+    }
+
+    private void initFresco() {
+        Fresco.initialize(this);
     }
 
     private void initImageLoader(Context context) {

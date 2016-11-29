@@ -13,11 +13,13 @@ import com.wujiafeng.mybaseapp.adapter.CommonFrameAdapter;
 import com.wujiafeng.mybaseapp.base.BaseFragment;
 import com.wujiafeng.mybaseapp.butterknife.ButterKnifeActivity;
 import com.wujiafeng.mybaseapp.eventbus.EventBusActivity;
+import com.wujiafeng.mybaseapp.fresco.FrescoActivity;
+import com.wujiafeng.mybaseapp.glide.activity.GlideActivity;
 import com.wujiafeng.mybaseapp.imageloader.activity.ImageLoaderActivity;
 import com.wujiafeng.mybaseapp.json.activity.FastJsonActivity;
 import com.wujiafeng.mybaseapp.json.activity.GsonActivity;
 import com.wujiafeng.mybaseapp.json.activity.NativeJsonParseAcitivity;
-import com.wujiafeng.mybaseapp.picasso.PicassoActivity;
+import com.wujiafeng.mybaseapp.picasso.activity.PicassoActivity;
 import com.wujiafeng.mybaseapp.xutils3.XUtils3Activity;
 
 /**
@@ -67,6 +69,12 @@ public class CommonFrameFragment extends BaseFragment {
                 }else if (data.toLowerCase().equals("imageloader")){
                     Intent intent = new Intent(mContext, ImageLoaderActivity.class);
                     mContext.startActivity(intent);
+                }else if (data.toLowerCase().equals("glide")){
+                    Intent intent = new Intent(mContext, GlideActivity.class);
+                    mContext.startActivity(intent);
+                }else if (data.toLowerCase().equals("fresco")){
+                    Intent intent = new Intent(mContext, FrescoActivity.class);
+                    mContext.startActivity(intent);
                 }
             }
         });
@@ -78,7 +86,7 @@ public class CommonFrameFragment extends BaseFragment {
         super.initData();
         Log.e(TAG,"initView！");
 
-        datas = new String[]{"OKHttp","NativeJsonParse","Gson","EventBus","FastJson","xUtils3","ButterKnife","ImageLoader","Picasso","Retrofit2","Fresco","Glide","greenDao","RxJava","volley","Gson","FastJson","picasso","evenBus","jcvideoplayer","pulltorefresh","Expandablelistview","UniversalVideoView","....."};
+        datas = new String[]{"OKHttp","NativeJsonParse","Gson","EventBus","FastJson","xUtils3","ButterKnife","ImageLoader","Fresco","Picasso","Glide","Retrofit2","Glide","greenDao","RxJava","volley","Gson","FastJson","picasso","evenBus","jcvideoplayer","pulltorefresh","Expandablelistview","UniversalVideoView","....."};
         mCommonFrameAdapter = new CommonFrameAdapter(mContext, datas);
         mListView.setAdapter(mCommonFrameAdapter);
     }

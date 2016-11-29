@@ -37,7 +37,7 @@
         </activity>
         <activity android:name=".xutils3.net.XUtils3NetActivity">
         </activity>
-        <activity android:name=".picasso.PicassoActivity">
+        <activity android:name=".picasso.activity.PicassoActivity">
         </activity>
         <activity android:name=".butterknife.ButterKnifeActivity">
         </activity>
@@ -52,6 +52,40 @@
         <activity android:name=".imageloader.activity.ImageLoaderGridViewActivity">
         </activity>
         <activity android:name=".imageloader.activity.ImageLoaderViewPagerActivity">
+        </activity>
+        <activity android:name=".glide.activity.GlideActivity">
+        </activity>
+        <activity android:name=".glide.activity.GlideBaseActivity">
+        </activity>
+        <activity android:name=".glide.activity.GlideRecyclerviewActivity">
+        </activity>
+        <activity android:name=".glide.activity.GlideTransformationsActivity">
+        </activity>
+        <activity android:name=".picasso.activity.PicassoListviewActivity">
+        </activity>
+        <activity android:name=".picasso.activity.PicassoTransfromationsActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoAutoSizeActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoCircleAndCornerActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoCropActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoJpegActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoListenerActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoModifyActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoMultiActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoResizeActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoSpimgActivity">
+        </activity>
+        <activity android:name=".fresco.FrescoGifAcitivity">
         </activity>
     </application>
 
